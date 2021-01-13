@@ -1,0 +1,57 @@
+# Blender MTL File: 'Armchair with pillows modified.blend'
+# Material Count: 5
+
+newmtl Material.001
+Ns 2.614759
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.074468 0.074468 0.074468
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Textures\\darker grey fabric.jpeg
+
+newmtl Material.002
+Ns 0.306023
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.074468 0.074468 0.074468
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Textures\\darker grey fabric.jpeg
+
+newmtl Material.003
+Ns 1.971931
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.081560 0.081560 0.081560
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Textures\\grey Fabric.jpg
+
+newmtl Material.004
+Ns 3.348127
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.117021 0.117021 0.117021
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Textures\\darker grey fabric.jpeg
+
+newmtl Metal_Texture
+Ns 1.971931
+Ka 1.000000 1.000000 1.000000
+Kd 0.137584 0.137584 0.137584
+Ks 0.067376 0.067376 0.067376
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd Textures\\Dark wood.jpg
