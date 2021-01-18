@@ -2,7 +2,7 @@
   "name": "showcase-sdk-tutorial",
   "version": "1.0.0",
   "main": "index.ts",
-  "repository": "git@github.com:gbruce/showcase-sdk-tutorial.git",
+  "repository": "git@github.com:gbruce/git.git",
   "author": "Guillermo Bruce <guillermo@matterport.com>",
   "license": "MIT",
   "scripts": {
