@@ -128,9 +128,9 @@ showcase.addEventListener('load', async function () {
     // modelNode4.obj3D.position.set(4.1, 0, -0.35); // (x, z, -y ) 
     // modelNode4.obj3D.rotation.set(0, -1.1, 0); // (x, z, -y ) 
     // modelNode4.start();
+   
 
-
-    //ADDING MODEL4---------------Main Floor (1)--------------------
+    //ADDING MODEL5---------------Main Floor (1)--------------------
     const modelNode5 = await sdk.Scene.createNode();
     // Store the fbx component since we will need to adjust it in the next step.
     const objComponent5 = modelNode5.addComponent(sdk.Scene.Component.FBX_LOADER, {
@@ -146,6 +146,45 @@ showcase.addEventListener('load', async function () {
     modelNode5.obj3D.position.set(4.1, 0, -0.35); // (x, z, -y ) 
     modelNode5.obj3D.rotation.set(0, -1.1, 0); // (x, z, -y ) 
     modelNode5.start();
+
+
+        //ADDING MODEL6--------------Main Floor (1)--------------------
+        const modelNode6 = await sdk.Scene.createNode();
+        // Store the fbx component since we will need to adjust it in the next step.
+        const objComponent6= modelNode6.addComponent(sdk.Scene.Component.OBJ_LOADER, {
+            url: '/3D_models/flower-obj/flower.obj',
+            materialUrl: '/3D_models/flower-obj/flower.mtl',
+        });
+        //initial scaling 
+        objComponent6.inputs.localScale = {
+            x: 0.01,
+            y: 0.01,
+            z: 0.01,
+        };
+        //initial positioning 
+        modelNode6.obj3D.position.set(6, -0.2, -1.8); // (x, z, -y ) 
+        modelNode6.obj3D.rotation.set(0, -1.1, 0); // (x, z, -y ) 
+        modelNode6.start();
+
+
+        
+        //ADDING MODEL7--------------Main Floor (1)--------------------
+        const modelNode7 = await sdk.Scene.createNode();
+        // Store the fbx component since we will need to adjust it in the next step.
+        const objComponent7= modelNode7.addComponent(sdk.Scene.Component.OBJ_LOADER, {
+            url: '/3D_models/uploads_files_2057468_Branches+in+Vases+OBJM1/OBJ+MTL.obj',
+            materialUrl: '/3D_models/uploads_files_2057468_Branches+in+Vases+OBJM1/OBJ+MTL.mtl',
+        });
+        //initial scaling 
+        objComponent7.inputs.localScale = {
+            x: 0.003,
+            y: 0.003,
+            z: 0.003,
+        };
+        //initial positioning 
+        modelNode7.obj3D.position.set(0.6, 0.47, 1.1); // (x, z, -y ) 
+        modelNode7.obj3D.rotation.set(0, 0, 0); // (x, z, -y ) 
+        modelNode7.start();
 
 
 });
