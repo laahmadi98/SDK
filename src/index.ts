@@ -187,4 +187,60 @@ showcase.addEventListener('load', async function () {
         modelNode7.start();
 
 
+             //ADDING MODEL8--------------Main Floor (1)--------------------
+             const modelNode8 = await sdk.Scene.createNode();
+             // Store the fbx component since we will need to adjust it in the next step.
+             const objComponent8= modelNode8.addComponent(sdk.Scene.Component.FBX_LOADER, {
+                 url: '/3D_models/kitchen/Cookie-Sheet-1.fbx',
+                //  materialUrl: '/3D_models/Apfel/Apfel.mtl',
+             });
+             //initial scaling 
+             objComponent8.inputs.localScale = {
+                 x:1,
+                 y:1,
+                 z:1,
+             };
+             //initial positioning 
+             modelNode8.obj3D.position.set(-1,0.4, -1.1); // (x, z, -y ) 
+             modelNode8.obj3D.rotation.set(0, 0, 0); // (x, z, -y ) 
+             modelNode8.start();
+
+             //ADDING MODEL9--------------Main Floor (1)--------------------
+             const modelNode9 = await sdk.Scene.createNode();
+             // Store the fbx component since we will need to adjust it in the next step.
+             const objComponent9= modelNode9.addComponent(sdk.Scene.Component.FBX_LOADER, {
+                 url: '/3D_models/kitchen/Bowl-1-Soup.fbx',
+                //  materialUrl: '/3D_models/Apfel/Apfel.mtl',
+             });
+             //initial scaling 
+             objComponent9.inputs.localScale = {
+                 x:1,
+                 y:1,
+                 z:1,
+             };
+             //initial positioning 
+             modelNode9.obj3D.position.set(-0.1,0.5, -2.5); // (x, z, -y ) 
+             modelNode9.obj3D.rotation.set(0, 0, 0); // (x, z, -y ) 
+             modelNode9.start();
+
+             
+             //ADDING MODEL10--------------Main Floor (1)--------------------
+             const modelNode10 = await sdk.Scene.createNode();
+             // Store the fbx component since we will need to adjust it in the next step.
+             const objComponent10= modelNode10.addComponent(sdk.Scene.Component.FBX_LOADER, {
+                 url: '/3D_models/kitchen/Mug-1.fbx',
+                //  materialUrl: '/3D_models/Apfel/Apfel.mtl',
+             });
+             //initial scaling 
+             objComponent10.inputs.localScale = {
+                 x:1,
+                 y:1,
+                 z:1,
+             };
+             //initial positioning 
+             modelNode10.obj3D.position.set(-0.3,0.5, -2.5); // (x, z, -y ) 
+             modelNode10.obj3D.rotation.set(0, 0, 0); // (x, z, -y ) 
+             modelNode10.start();
+
+
 });
