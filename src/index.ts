@@ -112,6 +112,7 @@ showcase.addEventListener('load', async function () {
 
 
     //ADDING MODEL4---------------Main Floor (1)--------------------
+    
     // const modelNode4 = await sdk.Scene.createNode();
     // // Store the fbx component since we will need to adjust it in the next step.
     // const objComponent4 = modelNode4.addComponent(sdk.Scene.Component.OBJ_LOADER, {
