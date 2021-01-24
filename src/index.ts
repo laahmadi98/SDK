@@ -51,7 +51,7 @@ showcase.addEventListener('load', async function () {
         y: 1,
         z: 1
     };
-    //initial positioning 
+  
     modelNode0.obj3D.position.set(4.18, -0.45, -0.45); // (x, z, -y ) 
     modelNode0.obj3D.rotation.set(0, 0, 0); // (x, z, -y ) 
     modelNode0.start();
