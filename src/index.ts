@@ -244,4 +244,25 @@ showcase.addEventListener('load', async function () {
              modelNode10.start();
 
 
+             
+
+                  //ADDING MODEL10--------------Main Floor (1)--------------------
+                  const modelNode11 = await sdk.Scene.createNode();
+                  // Store the fbx component since we will need to adjust it in the next step.
+                  const objComponent11= modelNode11.addComponent(sdk.Scene.Component.OBJ_LOADER, {
+                      url: '/3D_models/animal/11706_stuffed_animal_L2.obj',
+                      materialUrl: '/3D_models/animal/11706_stuffed_animal_L2.mtl',
+                  });
+                  //initial scaling 
+                  objComponent11.inputs.localScale = {
+                      x:0.02,
+                      y:0.02,
+                      z:0.02,
+                  };
+                  //initial positioning 
+                  modelNode11.obj3D.position.set(3.9,0.50, -2.6); // (x, z, -y ) 
+                  modelNode11.obj3D.rotation.set(-1.7, 0, 0); // (x, z, -y ) 
+                  modelNode11.start();
+
+
 });
