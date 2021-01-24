@@ -202,7 +202,7 @@ showcase.addEventListener('load', async function () {
                  z:1,
              };
              //initial positioning 
-             modelNode8.obj3D.position.set(-1,0.4, -1.1); // (x, z, -y ) 
+             modelNode8.obj3D.position.set(1.7,0.5, -0.9); // (x, z, -y ) 
              modelNode8.obj3D.rotation.set(0, 0, 0); // (x, z, -y ) 
              modelNode8.start();
 
